@@ -20,14 +20,12 @@ Models included:
 
 We model claim counts `ClaimNb` with policy duration `Exposure` under a Poisson assumption.
 
-- Target frequency:  
-  y_i = ClaimNb_i / Exposure_i  
+- Target frequency: `y_i = ClaimNb_i / Exposure_i`
 
-- Poisson GLM mean:  
-  lambda_i = exp(<theta, x_i> + theta_0)
+- Poisson GLM mean: `lambda_i = exp(<theta, x_i> + theta_0)`
 
-- Training objective:  
-  Exposure-weighted Poisson deviance (weights = Exposure)
+- Training objective: Exposure-weighted Poisson deviance (weights = `Exposure`)
+
 
 ### Metrics reported
 - MAE  
